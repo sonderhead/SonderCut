@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  /* espaciamento externo dos elementos*/
+  padding: 0;
+  /* espaciamento interno dos elementos*/
+  border: 0;
+  /* borda dos elementos*/
+  box-sizing: border-box;
+  /* inclui a borda e o padding na largura e altura totais dos elementos*/
+  /*reset do css */
+
+}
+
+:root {
+  --color-primary-ultra-light-green: #89B28F;
+  --color-secondary-l-green: #4B7B53;
+  --color-secondary-green: #455944;
+  --color-secondary-white: #FFFFFF;
+  --color-secondary-d-gray: #474747;
+  --color-secondary-l-gray: #8F8B8B;
+  --color-alerts-green: #004E05;
+  --color-alerts-red: #550202;
+
+
+
+  --font-headline-h1-size: 50px;
+  --font-headline-h2-size: 40px;
+  --font-headline-h3-size: 28px;
+  --font-headline-h4-size: 13px;
+  --font-body-size: 13px;
+  --font-button-size: 7px;
+
+  --font-tittle: "david libre", serif;
+  --font-body: "inter", sans-serif;
+
+}
+
+.highlighted-word{
+  color: var(--color-secondary-green);
+}
+
+.btn-primary{
+  color: var(--color-secondary-l-green)
+}
+
+.btn-secondary{
+  color: var(--color-secondary-d-gray)
+}
+
+.btn-primary, .btn-secondary{
+  padding: 12px 33px;
+  color: var(--color-secondary-white);
+  border-radius: 5px 0px;
+  text-decoration: none;
+  font-family: var(--font-tittle);
+  font-size: var(--font-button-size);
+}

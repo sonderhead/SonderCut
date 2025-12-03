@@ -1,0 +1,43 @@
+.section-que-somos{
+    background-color: var(--color-secondary-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 60px 10px;
+    background-image: url("../../../assets/images/wallpaper-quemSomos.svg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+.owner-image {
+    padding-top: 40px;
+    width: 350px;
+    border-radius: 4px;
+}
+
+.text-quem-somos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+}
+
+h2{
+    font-family: var(--font-tittle);
+    font-size: var(--font-headline-h2-size);
+    font-weight: 100;
+}
+
+.paragrafo-1{
+    font-family: var(--font-body);
+    font-size: 15px;
+    width: 400px;
+}
+
+.paragrafo-2{
+    font-family: var(--font-body);
+    font-size: 15px;
+    width: 400px;
+}

@@ -1,0 +1,53 @@
+.section-nossos-servicos {
+    background-color: var(--color-primary-ultra-light-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+h2 {
+    font-size: 50px;
+    padding: 15px;
+    padding-top: 40px;
+}
+
+.services-container {
+    display: flex;
+    gap: 40px;
+}
+
+.services-container img {
+    width: 200px;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px 15px;
+}
+
+.services-titles {
+    display: flex;
+    text-align: center;
+    gap: 89px;
+    font-family: var(--font-tittle);
+    font-size: 20px;
+    color: var(--color-secondary-green);
+}
+
+.services-descriptions {
+    display: flex;
+    text-align: center;
+    gap: 30px;
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--color-secondary-white);
+}
+
+.first-paragraph {
+    width: 210px;
+    background-color: var(--color-secondary-green);
+    padding: 15px;
+    gap: 10px;
+    border-radius: 1px 15px;
+
+}
+

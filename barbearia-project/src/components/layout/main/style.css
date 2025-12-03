@@ -1,0 +1,47 @@
+.ambiente {
+    background-color: var(--color-primary-ultra-light-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 9px 0;
+
+}
+
+.ambiente h1 {
+    font-size: var(--font-headline-h1-size);
+    font-family: var(--font-tittle);
+    color: var(--color-secondary-white);
+    font-weight: 160;
+}
+
+.container-ambiente {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+
+}
+
+.ambiente-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+}
+
+
+.ambiente-card2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+}
+
+.container-ambiente2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px
+}
+
