@@ -18,8 +18,10 @@
   --color-secondary-white: #FFFFFF;
   --color-secondary-d-gray: #474747;
   --color-secondary-l-gray: #8F8B8B;
+  --color-background-form: #D9D9D9
   --color-alerts-green: #004E05;
   --color-alerts-red: #550202;
+  --color-btn-green: #38BD4C;
 
 
 
@@ -28,7 +30,7 @@
   --font-headline-h3-size: 28px;
   --font-headline-h4-size: 13px;
   --font-body-size: 13px;
-  --font-button-size: 7px;
+  --font-button-size: 9px;
 
   --font-tittle: "david libre", serif;
   --font-body: "inter", sans-serif;
@@ -47,6 +49,10 @@
   color: var(--color-secondary-d-gray)
 }
 
+.btn-form{
+  background-color: var(--color-btn-green);
+}
+
 .btn-primary, .btn-secondary{
   padding: 12px 33px;
   color: var(--color-secondary-white);
@@ -54,4 +60,8 @@
   text-decoration: none;
   font-family: var(--font-tittle);
   font-size: var(--font-button-size);
+}
+
+.fundo-form{
+  background-color: var(--color-background-form);
 }

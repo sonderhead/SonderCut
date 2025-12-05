@@ -1,0 +1,36 @@
+.section-contato{
+    background-color: var(--color-primary-ultra-light-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 10px;
+}
+
+.contato-container{
+    display: flex;    
+    gap: 40px;
+}
+
+.section-contato h1{
+    font-size: var(--font-headline-h1-size);
+    font-family: var(--font-tittle);
+    color: var(--color-secondary-white);
+    font-weight: 160;
+}
+
+.contato-container h3{
+    font-size: var(--font-headline-h3-size);
+    font-family: var(--font-tittle);
+    color: var(--color-secondary-white);
+    font-weight: 160;
+}
+
+.contato-container p{
+    font-size: var(--font-body-size);
+    font-family: var(--font-tittle);
+    color: var(--color-secondary-white);
+    font-weight: 160;
+}
+

@@ -1,22 +1,42 @@
 import './style.css'
+import React from 'react'
+import instagram from '../../../assets/images/instagram.svg'
+import whatsapp from '../../../assets/images/whatsapp.svg'
 
-function SectionContato() {
+export function SectionContato() {
     return (
-        <section className="section-contato">
-            <h2>Contato</h2>
+        <div className='section-contato'>
+            <h1>Contato</h1>
 
-            <div>
-                <h2>Endereço</h2>
-                <h2>Horários</h2>
-                <h2>Contato</h2>
+            <div className='contato-container'>
 
-                <p>R. Dr. Antônio Bento, 393 Santo Amaro, SP</p>
-                <p>Ter. a Sex. 10h às 21h Sab. 10h às 17h</p>
-                <p>11 99543-0978 11 2234-7896</p>
+                <div>
+                    <h3>Endereço</h3>
+                    <p>R. Dr. Antônio Bento, 393 Santo Amaro, SP</p>
+                </div>
+
+                <div>
+                    <h3>Horários</h3>
+                    <p>Ter. a Sex. 10h às 21h Sab. 10h às 17h</p>
+                </div>
+
+                <div>
+                    <h3>Telefone</h3>
+                    <p>(11) 99543-0978 (11) 2234-7896</p>
+                </div>
             </div>
 
-                
-        </section>
+            <div className='socials-img'>
+
+                <img src={instagram} alt="instagram button" />
+                <a href="url_do_instagram" target="_blank" rel="noopener noreferrer"></a>
+
+                <img src={whatsapp} alt="whatsapp button" />
+                <a href="url_do_whatsapp" target="_blank" rel="noopener noreferrer"></a>
+
+            </div>
+        </div>
+
+
     )
 }
-

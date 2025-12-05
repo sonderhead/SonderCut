@@ -1,0 +1,111 @@
+
+.Agendar-section {
+    background-color: var( --color-secondary-green);
+    padding: 20px;
+    font-family: var(--font-tittle);
+    background-image: url("../../../assets/images/wallpaper-quemSomos.svg");
+    background-position: center;
+    background-size: cover;
+
+}
+.form-title{
+    font-size: 70px;
+}
+
+.layout-container {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.barber-img-container {
+    padding: 15px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.barber-img-container img {
+    width: 450px;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.10);
+    border-radius: 15px 15px;
+}
+
+.form-container {
+    flex: 1; 
+    padding: 40px 30px;
+    background-color: var(--green-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-label {
+    color: var(--color-secondary-white);
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: var(--font-body);
+    font-weight: 200px;
+    display: block; 
+}
+
+.form-input {
+    width: 250px;
+    height: var(--input-height);
+    padding: 5px;
+    border: none;
+    border-radius: 10px 3px;
+    background-color: var(--color-secondary-white);
+    box-sizing: border-box; 
+    margin-bottom: 10px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.data-container {
+    display: flex;
+    gap: 15px;
+}
+
+.data-container > div {
+    flex: 1;
+}
+
+
+.btn-enviar {
+    background-color: var(--color-btn-green);
+    color: var(--color-secondary-white);
+    padding: 8px;
+    border-radius: 10px 0px;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: none;
+    font-family: var(--font-tittle);
+    width: 140px;
+}
+
+.btn-enviar:hover {
+    
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .layout-container {
+        flex-direction: column;
+    }
+    .barber-img-container {
+        height: 300px; 
+    }
+}
