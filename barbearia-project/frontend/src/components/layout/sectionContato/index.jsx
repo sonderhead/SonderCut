@@ -26,12 +26,12 @@ export function SectionContato() {
                 </div>
             </div>
 
-            <div className='socials-img'>
+            <div className='socials-icons'>
 
-                <img src={instagram} alt="instagram button" />
+                <img className='instagram-icon' src={instagram} alt="instagram button" />
                 <a href="url_do_instagram" target="_blank" rel="noopener noreferrer"></a>
 
-                <img src={whatsapp} alt="whatsapp button" />
+                <img className='whatsapp-icon' src={whatsapp} alt="whatsapp button" />
                 <a href="url_do_whatsapp" target="_blank" rel="noopener noreferrer"></a>
 
             </div>

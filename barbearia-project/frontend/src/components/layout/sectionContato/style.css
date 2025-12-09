@@ -34,3 +34,17 @@
     font-weight: 160;
 }
 
+.socials-icons{
+    display: flex;
+    gap: 15px;
+}
+
+.instagram-icon{
+    width: 40px;
+    height: 40px;
+}
+
+.whatsapp-icon{
+    width: 40px;
+    height: 40px;
+}
