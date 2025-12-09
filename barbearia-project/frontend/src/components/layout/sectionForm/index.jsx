@@ -1,31 +1,31 @@
 import { useState } from 'react';
 import axios from 'axios';
 import './style.css';
-import OwnerAgendar from '../../../assets/images/Owner-agendar.svg'
-
-
+import OwnerAgendar from '../../../assets/images/Owner-agendar.svg';
 
 export const SectionForm = () => {
-    const [nome, setNome] = useState()
-    const [servico, setServico] = useState()
-    const [horario, setHorario] = useState()
-    const [data, setData] = useState()
+    const [nome, setNome] = useState("");
+    const [servico, setServico] = useState("");
+    const [horario, setHorario] = useState("");
+    const [data, setData] = useState("");
 
-    const cadastro = () => {
+    const cadastro = (e) => {
+        e.preventDefault(); // validação HTML já aconteceu antes disto
+
         const cadastroNovo = {
-            nome: nome,
+            nome,
             servicos: servico,
-            data: data,
-            horario: horario,
-        }
-        axios.post('http://localhost:8081/cadastrar', cadastroNovo)
+            data,
+            horario,
+        };
+
+        axios.post('https://sondercut-back.onrender.com/cadastrar', cadastroNovo)
             .then((res) => {
-                console.log(res.data)                
+                alert("Agendamento realizado com sucesso");
+                console.log(res.data);
             })
-            .catch((err) => console.log(err))
-    }
-
-
+            .catch((err) => console.log(err));
+    };
 
     return (
         <section className="Agendar-section">
@@ -35,11 +35,13 @@ export const SectionForm = () => {
                 </div>
 
                 <div className="form-container">
+                    
+                    <form className="contato-form" onSubmit={cadastro}>
 
-                    <form className="contato-form">
                         <div className="input-container">
                             <label htmlFor="name" className="form-label">Nome</label>
                             <input
+                                required
                                 type="text"
                                 id="name"
                                 name="name"
@@ -50,6 +52,7 @@ export const SectionForm = () => {
 
                             <label htmlFor="service" className="form-label">Serviços</label>
                             <input
+                                required
                                 type="text"
                                 id="service"
                                 name="service"
@@ -59,10 +62,11 @@ export const SectionForm = () => {
                             />
                         </div>
 
-                        <div className='data-container'>
+                        <div className="data-container">
                             <div>
                                 <label htmlFor="data" className="form-label">Dia:</label>
                                 <input
+                                    required
                                     type="date"
                                     id="data"
                                     name="data"
@@ -72,9 +76,11 @@ export const SectionForm = () => {
                                 />
                             </div>
                         </div>
+
                         <div>
                             <label htmlFor="horario" className="form-label">Horário:</label>
                             <input
+                                required
                                 type="time"
                                 id="horario"
                                 name="horario"
@@ -86,9 +92,11 @@ export const SectionForm = () => {
 
                         <div className="btn-enviarForm"></div>
 
-                        <button type="submit" className="btn-enviar" onClick={(E) => {E.preventDefault(); cadastro()}}>
+                
+                        <button type="submit" className="btn-enviar">
                             Agendar
                         </button>
+
                     </form>
                 </div>
             </div>
